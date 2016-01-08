@@ -1,0 +1,57 @@
+
+
+- Descriptor.py
+- Crypto.py
+- Utilities.py
+- MultTor.py
+- __init__.py
+- 
+- README.txt 
+
+
+General outline:
+----------------------------------------------------------------------------------
+
+        Load config file
+            - Control port info for all instances
+
+        Identify/confirm that all instances are UP/Running
+
+        Get Descriptor from cache for each instances(worker thread for each instance)
+
+        Calculate mix-descriptor-batch
+
+        publish descriptors
+        
+        Check to see which where successfull(Why might they fail?)
+
+
+
+
+
+Main Loop:
+------------------------------------------------------------------------------------
+
+Should monitor instances, and watch for any events that indicate that a descrptor might be reloaded:
+
+        Event trigger 
+
+        Wait for hsdirs to recive new descriptors 
+
+        grab new discriptor for the instance that caused the event cache it
+
+        calculate new mix-desc-batch
+
+        publish
+
+        check for failures 
+
+
+--------------------------------------------------------------------------------------
+
+Events
+
+Tor restarted/UP/DOWN
+Descriptor being constructed/published
+
+
