@@ -44,14 +44,18 @@ Should monitor instances, and watch for any events that indicate that a descrpto
 
         publish
 
-        check for failures 
+        check for failures (250 OK)
 
 
+
+Events:
 --------------------------------------------------------------------------------------
+Look into SETEVENT!
+Look into events:
 
-Events
-
-Tor restarted/UP/DOWN
-Descriptor being constructed/published
+"DESCCHANGED"
+"NEWDESC"
+4.1.25 
+        
 
 
