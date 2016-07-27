@@ -1,4 +1,4 @@
-# Tor - Hidden service Scaling
+# Tor - Hidden Service Scaling
 
 This project is concerning my masters thesis which looked at possible techniques which could be used in scaling Tor’s hidden
 services horizontally, more precisely looking at possible load balancing techniques and hidden service resiliency. A blog 
